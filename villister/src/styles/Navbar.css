@@ -1,0 +1,12 @@
+.navbar {
+  background: lightgrey;
+  height: 70px;
+}
+
+.navbar a {
+  color: black;
+  font-size: 1.9rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+}
