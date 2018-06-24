@@ -1,16 +1,24 @@
-.allCards {
-    margin-bottom: 10px;
-  border: none;
-  text-align: center;
+.column {
+  width: 25%;
+  
 }
 
-.allCards img {
-  margin: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  height: 200px;
-  width: 250px;
-  background-color: white;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+.images {
+  width: 300px; /* Increase if needed */
+}
+.images img {
+  width: 200px;
+  height: 200px;
+  margin: 5%;
+}
+
 
 
 
