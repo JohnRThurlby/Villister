@@ -1,0 +1,22 @@
+.header {
+  background-color: lightgrey;
+  height: 100;
+  width: 100%;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.header-logo {  
+  height: 100px;
+}
+
+.header-title {
+  font-size: 1.0em;
+}
+

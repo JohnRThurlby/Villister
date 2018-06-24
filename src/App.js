@@ -1,16 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/Header";
-import Section from "./components/Section";
+import Mainprocess from "./components/Mainprocess";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
+import villains from "./villain.json";
 
-const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <Section />
-    <Footer />
-  </div>
-);
 
+class App extends Component {
+  // Setting this.state.viaalins to the villains json array
+  state = {
+    villains
+  };
+  
+  // Map over this.state.villainss and render a Section component for each villain object
+  render() {
+    return (
+      <Wrapper>
+        <Navbar />
+        <Header />
+        <Mainprocess />
+        <Footer />
+      </Wrapper>
+    );
+  }
+}
+    
 export default App;
