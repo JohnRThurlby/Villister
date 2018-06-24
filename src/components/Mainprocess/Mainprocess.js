@@ -3,6 +3,8 @@ import Section from '../Section';
 import villains from "../../villain.json";
 import "./Mainprocess.css";
 
+var outmessage = " "
+
 class Mainprocess extends Component {
 	state = {
 		villains,
@@ -35,10 +37,13 @@ class Mainprocess extends Component {
 			const { topScore, score } = this.state;
 			const newScore = score + 1;
 			const newTopScore = newScore > topScore ? newScore : topScore;
-
+			outmessage = "You Guessed Correctly!"
+			if (newScore === 12) {
+				outmessage = "Congratulations! You beat the Villains back!"	
+			}
 			return this.setState({
 				villains: villainsOrder.sort(() => Math.random() - 0.5),
-				message: "You Guessed Correctly!",
+				message: outmessage,
 				score: newScore,
 				topScore: newTopScore,
 			})
