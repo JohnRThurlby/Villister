@@ -8,7 +8,7 @@ var outmessage = " "
 class Mainprocess extends Component {
 	state = {
 		villains,
-		message: "Click one of the logos to begin!",
+		message: "Click one of the Villain's to begin!",
 		score: 0,
 		topScore: 0
 	};
