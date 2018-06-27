@@ -8,7 +8,7 @@ import villains from "./villain.json";
 
 
 class App extends Component {
-  // Setting this.state.viaalins to the villains json array
+  // Setting this.state.villains to the villains json array
   state = {
     villains
   };
